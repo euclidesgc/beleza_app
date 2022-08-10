@@ -1,0 +1,50 @@
+{
+	"folders": [
+		{
+			"path": "beleza_app"
+		},
+		{
+			"path": "core"
+		},
+		{
+			"path": "external_dependencies"
+		},
+		{
+			"path": "home"
+		},
+		{
+			"path": "splash"
+		},
+		{
+			"path": "dashboard"
+		},
+		{
+			"path": "carrinho"
+		},
+		{
+			"path": "clube_boti"
+		},
+		{
+			"path": "divulgar"
+		},
+		{
+			"path": "novidades"
+		},
+		{
+			"path": "pedidos"
+		},
+		{
+			"path": "perfil"
+		},
+		{
+			"path": "menu"
+		},
+		{
+			"path": "design_system"
+		},
+		{
+			"path": "http"
+		}
+	],
+	"settings": {}
+}
