@@ -5,11 +5,16 @@ import 'package:http/http.dart';
 class InicioController {
   final HttpDioClient _client;
 
-  InicioController(this._client);
+  InicioController(this._client) {
+    // Modular.get<EventBus>().on().listen((event) {
+    //   debugPrint('❤ ❤ ❤ ${event.toString()}');
+    // });
+  }
 
   goModule(int ind) {
     switch (ind) {
       case 0:
+        Modular.to.pushNamed('/inicio/');
         break;
       case 1:
         Modular.to.pushNamed('/novidades/');

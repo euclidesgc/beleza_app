@@ -7,13 +7,13 @@ class DashboardModule extends Module {
   @override
   List<Bind> get binds => [
         Bind.singleton((i) => Dio()),
-        Bind.singleton((i) => InicioController(HttpDioClient(i<Dio>()))),
+        Bind.lazySingleton((i) => InicioController(HttpDioClient(i<Dio>()))),
       ];
 
   @override
   List<ModularRoute> get routes => [
         ChildRoute(
-          '/',
+          '/inicio/',
           child: (_, args) =>
               InicioPage(controller: Modular.get<InicioController>()),
         ),

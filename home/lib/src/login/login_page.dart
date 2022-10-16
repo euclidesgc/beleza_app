@@ -29,7 +29,7 @@ class LoginPage extends StatelessWidget {
             ),
             AppButton(
               label: 'Entrar',
-              onPressed: () => Modular.to.pushNamed('/dashboard/'),
+              onPressed: () => Modular.to.pushNamed('/dashboard/inicio/'),
             ),
           ],
         ),

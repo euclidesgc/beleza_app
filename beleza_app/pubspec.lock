@@ -50,6 +50,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.16.0"
+  common:
+    dependency: transitive
+    description:
+      path: "../common"
+      relative: true
+    source: path
+    version: "0.0.1"
   core:
     dependency: "direct main"
     description:
@@ -92,6 +99,13 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  event_bus:
+    dependency: transitive
+    description:
+      name: event_bus
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
   external_dependencies:
     dependency: "direct main"
     description:
@@ -304,5 +318,5 @@ packages:
     source: hosted
     version: "2.1.2"
 sdks:
-  dart: ">=2.17.0-0 <3.0.0"
+  dart: ">=2.18.2 <3.0.0"
   flutter: ">=1.17.0"

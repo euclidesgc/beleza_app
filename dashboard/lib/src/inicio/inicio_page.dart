@@ -1,5 +1,5 @@
 import 'package:dashboard/src/inicio/inicio_controller.dart';
-import 'package:design_system/design_system.dart';
+import 'package:external_dependencies/external_dependencies.dart';
 import 'package:flutter/material.dart';
 
 class InicioPage extends StatefulWidget {
@@ -24,16 +24,23 @@ class _InicioPageState extends State<InicioPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:
-          AppBar(title: const Text('Início'), automaticallyImplyLeading: false),
-      body: Column(
-        children: [
-          AppButton(
-            label: 'get Cats Facts',
-            onPressed: () => widget.controller.getCatFact(),
-          ),
-        ],
+      appBar: AppBar(
+        title: const Text('Início'),
+        automaticallyImplyLeading: false,
+        centerTitle: true,
       ),
+      body: const RouterOutlet(),
+      // Column(
+      //   children: [
+      //     AppButton(
+      //       label: 'get Cats Facts',
+      //       onPressed: () {
+      //         // widget.controller.getCatFact();
+      //         Modular.get<EventBus>().fire(' Evento disparado! ');
+      //       },
+      //     ),
+      //   ],
+      // ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         showUnselectedLabels: true,
