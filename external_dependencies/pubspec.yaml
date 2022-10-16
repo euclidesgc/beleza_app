@@ -14,6 +14,7 @@ dependencies:
   
   flutter_modular: ^5.0.3
   dio: ^4.0.6
+  event_bus: ^2.0.0
 
 dev_dependencies:
   flutter_test:
