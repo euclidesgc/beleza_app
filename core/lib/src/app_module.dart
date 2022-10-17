@@ -26,5 +26,6 @@ class AppModule extends Module {
         ModuleRoute('/pedidos', module: PedidosModule()),
         ModuleRoute('/menu', module: MenuModule()),
         ModuleRoute('/perfil', module: PerfilModule()),
+        ModuleRoute('/perfil', module: PerfilModule()),
       ];
 }

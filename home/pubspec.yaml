@@ -13,10 +13,13 @@ dependencies:
     sdk: flutter
 
   external_dependencies:
-    path: ../external_dependencies
+    path: ../external_dependencies/
 
   design_system:
-    path: ../design_system
+    path: ../design_system/
+  
+  shared:
+    path: ../shared/
 
 dev_dependencies:
   flutter_test:

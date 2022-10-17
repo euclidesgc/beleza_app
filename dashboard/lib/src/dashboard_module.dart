@@ -4,10 +4,10 @@ import 'package:dashboard/src/bottom_menu/bottom_menu_controller.dart';
 import 'package:dashboard/src/bottom_menu/bottom_menu_page.dart';
 import 'package:dashboard/src/dashboard/dashboard_controller.dart';
 import 'package:dashboard/src/dashboard/dashboard_page.dart';
+import 'package:design_system/design_system.dart';
 import 'package:divulgar/divulgar.dart';
 import 'package:external_dependencies/external_dependencies.dart';
 import 'package:http/http.dart';
-import 'package:menu/menu.dart';
 import 'package:novidades/novidades.dart';
 import 'package:pedidos/pedidos.dart';
 
@@ -25,6 +25,9 @@ class DashboardModule extends Module {
 
   @override
   List<ModularRoute> get routes => [
+        ChildRoute('/modal',
+            child: (_, args) => AppModal(message: args.data),
+            transition: TransitionType.downToUp),
         ChildRoute(
           '/',
           child: (_, args) => BottomMenuPage(controller: Modular.get()),
@@ -36,7 +39,6 @@ class DashboardModule extends Module {
             ModuleRoute('/novidades', module: NovidadesModule()),
             ModuleRoute('/divulgar', module: DivulgarModule()),
             ModuleRoute('/pedidos', module: PedidosModule()),
-            ModuleRoute('/menu', module: MenuModule()),
           ],
         ),
       ];

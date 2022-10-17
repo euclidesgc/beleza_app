@@ -13,13 +13,16 @@ dependencies:
     sdk: flutter
 
   external_dependencies:
-    path: ../external_dependencies
+    path: ../external_dependencies/
 
   design_system:
-    path: ../design_system
+    path: ../design_system/
+
+  shared:
+    path: ../shared/
     
   http:
-    path: ../http
+    path: ../http/
 
   divulgar:
     path: ../divulgar/

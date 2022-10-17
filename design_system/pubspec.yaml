@@ -11,6 +11,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+  shared:
+    path: ../shared/
+
+  external_dependencies:
+    path: ../external_dependencies/
 
 dev_dependencies:
   flutter_test:

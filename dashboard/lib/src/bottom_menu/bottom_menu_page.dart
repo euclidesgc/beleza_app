@@ -1,6 +1,7 @@
 import 'package:dashboard/src/bottom_menu/bottom_menu_controller.dart';
 import 'package:external_dependencies/external_dependencies.dart';
 import 'package:flutter/material.dart';
+import 'package:shared/shared.dart';
 
 class BottomMenuPage extends StatefulWidget {
   final BottomMenuController controller;
@@ -16,6 +17,21 @@ class _BottomMenuPageState extends State<BottomMenuPage> {
   void initState() {
     super.initState();
     Modular.to.addListener(onChangeRoute);
+
+    Modular.get<EventBus>().on<EventCount>().listen((event) {
+      if (mounted) {
+        setState(() {
+          debugPrint('alterou o valor! ${widget.controller.qtde}');
+          widget.controller.qtde = widget.controller.qtde + event.value;
+        });
+      }
+    });
+
+    Modular.get<EventBus>().on<EventModal>().listen((event) {
+      if (mounted) {
+        Modular.to.pushNamed('/dashboard/modal', arguments: event.message);
+      }
+    });
   }
 
   void onChangeRoute() {
@@ -46,6 +62,12 @@ class _BottomMenuPageState extends State<BottomMenuPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Quantidade: ${widget.controller.qtde.toString()}'),
+        centerTitle: true,
+        backgroundColor: Colors.purple,
+        automaticallyImplyLeading: false,
+      ),
       body: const RouterOutlet(),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: widget.controller.selectItem,
@@ -73,7 +95,7 @@ class _BottomMenuPageState extends State<BottomMenuPage> {
               Modular.to.navigate('/dashboard/pedidos/');
               break;
             case 4:
-              Modular.to.navigate('/dashboard/menu/');
+              Modular.to.pushNamed('/menu/');
               break;
           }
         },

@@ -10,26 +10,26 @@ class MenuPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Menu'),
-        automaticallyImplyLeading: false,
+        automaticallyImplyLeading: true,
       ),
       body: ListView(
         padding: const EdgeInsets.all(8),
         children: [
           AppButton(
             label: 'Perfil',
-            onPressed: () => Modular.to.pushNamed('/perfil'),
+            onPressed: () => Modular.to.pushNamed('/perfil/'),
           ),
           AppButton(
             label: 'Meu Clube Boti',
-            onPressed: () => Modular.to.pushNamed('/clube_boti'),
+            onPressed: () => Modular.to.pushNamed('/clube_boti/'),
           ),
           AppButton(
             label: 'Divulgar',
-            onPressed: () => Modular.to.pushNamed('/dashboard/divulgar'),
+            onPressed: () => Modular.to.navigate('/dashboard/divulgar/'),
           ),
           AppButton(
             label: 'Pedidos',
-            onPressed: () => Modular.to.pushNamed('/dashboard/pedidos'),
+            onPressed: () => Modular.to.navigate('/dashboard/pedidos/'),
           ),
           AppButton(
             label: 'Treinamentos',

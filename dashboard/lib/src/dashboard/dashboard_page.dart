@@ -1,6 +1,8 @@
 import 'package:dashboard/src/dashboard/dashboard_controller.dart';
 import 'package:design_system/design_system.dart';
+import 'package:external_dependencies/external_dependencies.dart';
 import 'package:flutter/material.dart';
+import 'package:shared/shared.dart';
 
 class DashboardPage extends StatefulWidget {
   final DashboardController controller;
@@ -15,21 +17,31 @@ class _DashboardPageState extends State<DashboardPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Início'),
-        automaticallyImplyLeading: false,
-        centerTitle: true,
-      ),
-      body: Column(
-        children: [
-          AppButton(
-            label: 'get Cats Facts',
-            onPressed: () {
-              // widget.controller.getCatFact();
-              // Modular.get<EventBus>().fire(' Evento disparado! ');
-            },
-          ),
-        ],
+      body: Center(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            AppButton(
+              label: 'Dashboard Button - Incrementar valor',
+              onPressed: () {
+                Modular.get<EventBus>().fire(EventCount(value: 1));
+              },
+            ),
+            AppButton(
+              label: 'Dashboard Button - Decrementar valor',
+              onPressed: () {
+                Modular.get<EventBus>().fire(EventCount(value: -1));
+              },
+            ),
+            AppButton(
+              label: 'Dashboard Button - Show Modal!',
+              onPressed: () {
+                Modular.get<EventBus>()
+                    .fire(EventModal('Modal vindo do DASHBOARD!'));
+              },
+            ),
+          ],
+        ),
       ),
     );
   }

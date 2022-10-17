@@ -44,6 +44,11 @@ dependencies:
 
   perfil:
     path: ../perfil/
+  
+  shared:
+    path: ../shared/
+  
+  
 
 dev_dependencies:
   flutter_test:

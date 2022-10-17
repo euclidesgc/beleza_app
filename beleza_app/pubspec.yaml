@@ -19,6 +19,9 @@ dependencies:
   external_dependencies:
     path: ../external_dependencies/
 
+  shared:
+    path: ../shared/
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
