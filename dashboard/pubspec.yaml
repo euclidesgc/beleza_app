@@ -20,6 +20,18 @@ dependencies:
     
   http:
     path: ../http
+
+  divulgar:
+    path: ../divulgar/
+
+  novidades:
+    path: ../novidades/
+
+  pedidos:
+    path: ../pedidos/
+
+  menu:
+    path: ../menu/
   
 
 dev_dependencies:

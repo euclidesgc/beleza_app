@@ -10,6 +10,7 @@ class MenuPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Menu'),
+        automaticallyImplyLeading: false,
       ),
       body: ListView(
         padding: const EdgeInsets.all(8),
@@ -24,11 +25,11 @@ class MenuPage extends StatelessWidget {
           ),
           AppButton(
             label: 'Divulgar',
-            onPressed: () => Modular.to.pushNamed('/divulgar'),
+            onPressed: () => Modular.to.pushNamed('/dashboard/divulgar'),
           ),
           AppButton(
             label: 'Pedidos',
-            onPressed: () => Modular.to.pushNamed('/pedidos'),
+            onPressed: () => Modular.to.pushNamed('/dashboard/pedidos'),
           ),
           AppButton(
             label: 'Treinamentos',
@@ -52,8 +53,7 @@ class MenuPage extends StatelessWidget {
           ),
           AppButton(
             label: 'Sair do app',
-            onPressed: () =>
-                Modular.to.popUntil(ModalRoute.withName('/home/login')),
+            onPressed: () => Modular.to.navigate('/home/login'),
           ),
         ],
       ),

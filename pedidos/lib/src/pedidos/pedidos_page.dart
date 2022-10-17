@@ -8,6 +8,7 @@ class PedidosPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Pedidos'),
+        automaticallyImplyLeading: false,
       ),
       body: Container(),
     );

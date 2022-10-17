@@ -8,6 +8,7 @@ class PerfilPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Perfil'),
+        automaticallyImplyLeading: true,
       ),
       body: Container(),
     );

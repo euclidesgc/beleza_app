@@ -2,10 +2,10 @@ import 'package:external_dependencies/external_dependencies.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart';
 
-class InicioController {
+class DashboardController {
   final HttpDioClient _client;
 
-  InicioController(this._client) {
+  DashboardController(this._client) {
     // Modular.get<EventBus>().on().listen((event) {
     //   debugPrint('❤ ❤ ❤ ${event.toString()}');
     // });

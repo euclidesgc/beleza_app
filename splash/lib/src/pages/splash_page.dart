@@ -15,7 +15,7 @@ class _SplashPageState extends State<SplashPage> {
     super.initState();
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
 
-    Future.delayed(const Duration(seconds: 4)).then((_) {
+    Future.delayed(const Duration(seconds: 3)).then((_) {
       Modular.to.pushNamed('/home/login');
     });
   }

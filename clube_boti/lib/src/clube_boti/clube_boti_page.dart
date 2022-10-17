@@ -8,6 +8,7 @@ class ClubeBotiPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Clube Boti'),
+        automaticallyImplyLeading: true,
       ),
       body: Container(),
     );

@@ -3,9 +3,7 @@ import 'package:splash/src/pages/splash_page.dart';
 
 class SplashModule extends Module {
   @override
-  List<Bind> get binds => [
-        Bind.singleton<EventBus>((i) => EventBus(sync: true)),
-      ];
+  List<Bind> get binds => [];
 
   @override
   List<ModularRoute> get routes => [
