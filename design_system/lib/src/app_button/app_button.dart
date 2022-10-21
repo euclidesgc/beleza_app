@@ -12,9 +12,12 @@ class AppButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      child: Text(label),
-      onPressed: onPressed,
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: ElevatedButton(
+        child: Text(label),
+        onPressed: onPressed,
+      ),
     );
   }
 }
