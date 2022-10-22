@@ -27,11 +27,11 @@ dependencies:
   disseminate:
     path: ../disseminate/
 
-  novidades:
-    path: ../novidades/
+  news:
+    path: ../news/
 
-  pedidos:
-    path: ../pedidos/
+  orders:
+    path: ../orders/
 
   menu:
     path: ../menu/

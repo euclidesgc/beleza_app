@@ -22,12 +22,6 @@
 			"path": "clube_boti"
 		},
 		{
-			"path": "pedidos"
-		},
-		{
-			"path": "perfil"
-		},
-		{
 			"path": "menu"
 		},
 		{
@@ -47,8 +41,13 @@
 		},
 		{
 			"path": "news"
+		},
+		{
+			"path": "orders"
+		},
+		{
+			"path": "profile"
 		}
 	],
-	"settings": {
-	}
+	"settings": {}
 }

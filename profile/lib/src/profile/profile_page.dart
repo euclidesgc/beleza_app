@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class PedidosPage extends StatelessWidget {
-  const PedidosPage({Key? key}) : super(key: key);
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Pedidos'),
-        automaticallyImplyLeading: false,
+        title: const Text('Perfil'),
+        automaticallyImplyLeading: true,
       ),
       body: Container(),
     );

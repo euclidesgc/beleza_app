@@ -8,8 +8,8 @@ import 'package:design_system/design_system.dart';
 import 'package:disseminate/disseminate.dart';
 import 'package:external_dependencies/external_dependencies.dart';
 import 'package:http/http.dart';
-import 'package:novidades/novidades.dart';
-import 'package:pedidos/pedidos.dart';
+import 'package:news/news.dart';
+import 'package:orders/orders.dart';
 import 'package:shared/shared.dart';
 
 class DashboardModule extends Module {
@@ -37,9 +37,9 @@ class DashboardModule extends Module {
               '/inicio',
               child: (_, args) => DashboardPage(controller: Modular.get()),
             ),
-            ModuleRoute('/novidades', module: NovidadesModule()),
-            ModuleRoute('/divulgar', module: DisseminateModule()),
-            ModuleRoute('/pedidos', module: PedidosModule()),
+            ModuleRoute('/news', module: NewsModule()),
+            ModuleRoute('/disseminate', module: DisseminateModule()),
+            ModuleRoute('/orders', module: OrdersModule()),
           ],
         ),
       ];

@@ -5,9 +5,9 @@ import 'package:disseminate/disseminate.dart';
 import 'package:external_dependencies/external_dependencies.dart';
 import 'package:home/home.dart';
 import 'package:menu/menu.dart';
-import 'package:novidades/novidades.dart';
-import 'package:pedidos/pedidos.dart';
-import 'package:perfil/perfil.dart';
+import 'package:news/news.dart';
+import 'package:orders/orders.dart';
+import 'package:profile/profile.dart';
 import 'package:splash/splash.dart';
 
 class AppModule extends Module {
@@ -22,9 +22,9 @@ class AppModule extends Module {
         ModuleRoute('/cart', module: CartModule()),
         ModuleRoute('/clube_boti', module: ClubeBotiModule()),
         ModuleRoute('/disseminate', module: DisseminateModule()),
-        ModuleRoute('/novidades', module: NovidadesModule()),
-        ModuleRoute('/pedidos', module: PedidosModule()),
+        ModuleRoute('/news', module: NewsModule()),
+        ModuleRoute('/orders', module: OrdersModule()),
         ModuleRoute('/menu', module: MenuModule()),
-        ModuleRoute('/perfil', module: PerfilModule()),
+        ModuleRoute('/profile', module: ProfileModule()),
       ];
 }

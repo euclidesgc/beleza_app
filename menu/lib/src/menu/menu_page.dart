@@ -17,7 +17,7 @@ class MenuPage extends StatelessWidget {
         children: [
           AppButton(
             label: 'Perfil',
-            onPressed: () => Modular.to.pushNamed('/perfil/'),
+            onPressed: () => Modular.to.pushNamed('/profile/'),
           ),
           AppButton(
             label: 'Meu Clube Boti',
@@ -25,11 +25,11 @@ class MenuPage extends StatelessWidget {
           ),
           AppButton(
             label: 'Divulgar',
-            onPressed: () => Modular.to.navigate('/dashboard/divulgar/'),
+            onPressed: () => Modular.to.navigate('/dashboard/disseminate/'),
           ),
           AppButton(
             label: 'Pedidos',
-            onPressed: () => Modular.to.navigate('/dashboard/pedidos/'),
+            onPressed: () => Modular.to.navigate('/dashboard/orders/'),
           ),
           AppButton(
             label: 'Treinamentos',
