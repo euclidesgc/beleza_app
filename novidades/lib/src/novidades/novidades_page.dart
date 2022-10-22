@@ -8,9 +8,6 @@ class NovidadesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Modular.get<EventBus>().on().listen((event) {
-    //   debugPrint('❤ ❤ ❤ ${event.toString()}');
-    // });
     return Scaffold(
       body: Center(
         child: Column(
@@ -18,20 +15,20 @@ class NovidadesPage extends StatelessWidget {
             AppButton(
               label: 'Novidades Button - Incrementar valor',
               onPressed: () {
-                Modular.get<EventBus>().fire(EventCount(value: 1));
+                Modular.get<EventBus>().send(EventCount(value: 1));
               },
             ),
             AppButton(
               label: 'Novidades Button - Decrementar valor',
               onPressed: () {
-                Modular.get<EventBus>().fire(EventCount(value: -1));
+                Modular.get<EventBus>().send(EventCount(value: -1));
               },
             ),
             AppButton(
               label: 'Novidades Button - Show Modal!',
               onPressed: () {
                 Modular.get<EventBus>()
-                    .fire(EventModal('Modal vindo do NOVIDADES!'));
+                    .send(EventModal('Modal vindo do NOVIDADES!'));
               },
             ),
           ],

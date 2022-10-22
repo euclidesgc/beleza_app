@@ -15,20 +15,20 @@ class DivulgarPage extends StatelessWidget {
             AppButton(
               label: 'Divulgar Button - Incrementar valor',
               onPressed: () {
-                Modular.get<EventBus>().fire(EventCount(value: 1));
+                Modular.get<EventBus>().send(EventCount(value: 1));
               },
             ),
             AppButton(
               label: 'Divulgar Button - Decrementar valor',
               onPressed: () {
-                Modular.get<EventBus>().fire(EventCount(value: -1));
+                Modular.get<EventBus>().send(EventCount(value: -1));
               },
             ),
             AppButton(
               label: 'Divulgar Button - Show Modal!',
               onPressed: () {
                 Modular.get<EventBus>()
-                    .fire(EventModal('Modal vindo do DIVULGAR!'));
+                    .send(EventModal('Modal vindo do DIVULGAR!'));
               },
             ),
           ],

@@ -24,20 +24,20 @@ class _DashboardPageState extends State<DashboardPage> {
             AppButton(
               label: 'Dashboard Button - Incrementar valor',
               onPressed: () {
-                Modular.get<EventBus>().fire(EventCount(value: 1));
+                Modular.get<EventBus>().send(EventCount(value: 1));
               },
             ),
             AppButton(
               label: 'Dashboard Button - Decrementar valor',
               onPressed: () {
-                Modular.get<EventBus>().fire(EventCount(value: -1));
+                Modular.get<EventBus>().send(EventCount(value: -1));
               },
             ),
             AppButton(
               label: 'Dashboard Button - Show Modal!',
               onPressed: () {
                 Modular.get<EventBus>()
-                    .fire(EventModal('Modal vindo do DASHBOARD!'));
+                    .send(EventModal('Modal vindo do DASHBOARD!'));
               },
             ),
           ],

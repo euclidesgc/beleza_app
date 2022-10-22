@@ -10,6 +10,7 @@ import 'package:external_dependencies/external_dependencies.dart';
 import 'package:http/http.dart';
 import 'package:novidades/novidades.dart';
 import 'package:pedidos/pedidos.dart';
+import 'package:shared/shared.dart';
 
 class DashboardModule extends Module {
   @override
