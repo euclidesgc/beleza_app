@@ -30,8 +30,8 @@ dependencies:
   clube_boti:
     path: ../clube_boti/
 
-  divulgar:
-    path: ../divulgar/
+  disseminate:
+    path: ../disseminate/
 
   novidades:
     path: ../novidades/

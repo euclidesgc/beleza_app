@@ -1,13 +1,13 @@
 import 'package:external_dependencies/external_dependencies.dart';
 
-import 'divulgar/divulgar_page.dart';
+import 'disseminate/disseminate_page.dart';
 
-class DivulgarModule extends Module {
+class Disseminate extends Module {
   @override
   List<Bind> get binds => [];
 
   @override
   List<ModularRoute> get routes => [
-        ChildRoute('/', child: (_, args) => const DivulgarPage()),
+        ChildRoute('/', child: (_, args) => const DisseminatePage()),
       ];
 }
