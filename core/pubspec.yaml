@@ -24,8 +24,8 @@ dependencies:
   dashboard:
     path: ../dashboard/
 
-  carrinho:
-    path: ../carrinho/
+  cart:
+    path: ../cart/
 
   clube_boti:
     path: ../clube_boti/

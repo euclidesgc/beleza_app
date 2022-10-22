@@ -1,4 +1,4 @@
-import 'package:carrinho/carrinho.dart';
+import 'package:cart/cart.dart';
 import 'package:clube_boti/clube_boti.dart';
 import 'package:dashboard/dashboard.dart';
 import 'package:divulgar/divulgar.dart';
@@ -19,13 +19,12 @@ class AppModule extends Module {
         ModuleRoute('/', module: SplashModule()),
         ModuleRoute('/home', module: HomeModule()),
         ModuleRoute('/dashboard', module: DashboardModule()),
-        ModuleRoute('/carrinho', module: CarrinhoModule()),
+        ModuleRoute('/cart', module: CartModule()),
         ModuleRoute('/clube_boti', module: ClubeBotiModule()),
         ModuleRoute('/divulgar', module: DivulgarModule()),
         ModuleRoute('/novidades', module: NovidadesModule()),
         ModuleRoute('/pedidos', module: PedidosModule()),
         ModuleRoute('/menu', module: MenuModule()),
-        ModuleRoute('/perfil', module: PerfilModule()),
         ModuleRoute('/perfil', module: PerfilModule()),
       ];
 }
