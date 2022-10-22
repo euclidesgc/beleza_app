@@ -22,9 +22,6 @@
 			"path": "clube_boti"
 		},
 		{
-			"path": "novidades"
-		},
-		{
 			"path": "pedidos"
 		},
 		{
@@ -47,6 +44,9 @@
 		},
 		{
 			"path": "disseminate"
+		},
+		{
+			"path": "news"
 		}
 	],
 	"settings": {

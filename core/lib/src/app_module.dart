@@ -1,7 +1,7 @@
 import 'package:cart/cart.dart';
 import 'package:clube_boti/clube_boti.dart';
 import 'package:dashboard/dashboard.dart';
-import 'package:divulgar/divulgar.dart';
+import 'package:disseminate/disseminate.dart';
 import 'package:external_dependencies/external_dependencies.dart';
 import 'package:home/home.dart';
 import 'package:menu/menu.dart';
@@ -21,7 +21,7 @@ class AppModule extends Module {
         ModuleRoute('/dashboard', module: DashboardModule()),
         ModuleRoute('/cart', module: CartModule()),
         ModuleRoute('/clube_boti', module: ClubeBotiModule()),
-        ModuleRoute('/divulgar', module: DivulgarModule()),
+        ModuleRoute('/disseminate', module: DisseminateModule()),
         ModuleRoute('/novidades', module: NovidadesModule()),
         ModuleRoute('/pedidos', module: PedidosModule()),
         ModuleRoute('/menu', module: MenuModule()),

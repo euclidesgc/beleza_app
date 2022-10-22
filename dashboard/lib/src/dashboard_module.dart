@@ -5,7 +5,7 @@ import 'package:dashboard/src/bottom_menu/bottom_menu_page.dart';
 import 'package:dashboard/src/dashboard/dashboard_controller.dart';
 import 'package:dashboard/src/dashboard/dashboard_page.dart';
 import 'package:design_system/design_system.dart';
-import 'package:divulgar/divulgar.dart';
+import 'package:disseminate/disseminate.dart';
 import 'package:external_dependencies/external_dependencies.dart';
 import 'package:http/http.dart';
 import 'package:novidades/novidades.dart';
@@ -38,7 +38,7 @@ class DashboardModule extends Module {
               child: (_, args) => DashboardPage(controller: Modular.get()),
             ),
             ModuleRoute('/novidades', module: NovidadesModule()),
-            ModuleRoute('/divulgar', module: DivulgarModule()),
+            ModuleRoute('/divulgar', module: DisseminateModule()),
             ModuleRoute('/pedidos', module: PedidosModule()),
           ],
         ),

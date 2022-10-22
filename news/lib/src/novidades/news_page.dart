@@ -3,8 +3,8 @@ import 'package:external_dependencies/external_dependencies.dart';
 import 'package:flutter/material.dart';
 import 'package:shared/shared.dart';
 
-class NovidadesPage extends StatelessWidget {
-  const NovidadesPage({Key? key}) : super(key: key);
+class NewsPage extends StatelessWidget {
+  const NewsPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

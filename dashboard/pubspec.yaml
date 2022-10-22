@@ -24,8 +24,8 @@ dependencies:
   http:
     path: ../http/
 
-  divulgar:
-    path: ../divulgar/
+  disseminate:
+    path: ../disseminate/
 
   novidades:
     path: ../novidades/

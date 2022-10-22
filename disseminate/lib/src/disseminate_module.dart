@@ -2,7 +2,7 @@ import 'package:external_dependencies/external_dependencies.dart';
 
 import 'disseminate/disseminate_page.dart';
 
-class Disseminate extends Module {
+class DisseminateModule extends Module {
   @override
   List<Bind> get binds => [];
 
