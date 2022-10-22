@@ -2,9 +2,9 @@ import 'dart:convert';
 
 import 'package:dio/dio.dart';
 
-import '../http_error.dart';
-import '../i_http_client.dart';
-import '../models/models.dart';
+import 'errors/http_error.dart';
+import 'i_http_client.dart';
+import 'models/models.dart';
 
 class HttpDioClient implements IHttpClient {
   final Dio _dio;

@@ -26,9 +26,10 @@ class DashboardModule extends Module {
 
   @override
   List<ModularRoute> get routes => [
-        ChildRoute('/modal',
-            child: (_, args) => AppModal(message: args.data),
-            transition: TransitionType.downToUp),
+        ChildRoute(
+          '/modal',
+          child: (_, args) => AppModal(message: args.data),
+        ),
         ChildRoute(
           '/',
           child: (_, args) => BottomMenuPage(controller: Modular.get()),
@@ -37,9 +38,18 @@ class DashboardModule extends Module {
               '/inicio',
               child: (_, args) => DashboardPage(controller: Modular.get()),
             ),
-            ModuleRoute('/news', module: NewsModule()),
-            ModuleRoute('/disseminate', module: DisseminateModule()),
-            ModuleRoute('/orders', module: OrdersModule()),
+            ModuleRoute(
+              '/news',
+              module: NewsModule(),
+            ),
+            ModuleRoute(
+              '/disseminate',
+              module: DisseminateModule(),
+            ),
+            ModuleRoute(
+              '/orders',
+              module: OrdersModule(),
+            ),
           ],
         ),
       ];

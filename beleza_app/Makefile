@@ -2,7 +2,7 @@
 
 ROOT_DIR = $(realpath .)
 
-PACKAGES = beleza_app core external_dependencies home splash dashboard carrinho clube_boti divulgar novidades pedidos perfil menu design_system http
+PACKAGES = beleza_app core external_dependencies home splash dashboard cart clube_boti disseminate news orders profile menu design_system http shared
 
 help:  ## This help
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST) | sort

@@ -38,13 +38,13 @@ class _BottomMenuPageState extends State<BottomMenuPage> {
     if (Modular.to.path.contains('inicio')) {
       widget.controller.selectItem = 0;
     }
-    if (Modular.to.path.contains('novidades')) {
+    if (Modular.to.path.contains('news')) {
       widget.controller.selectItem = 1;
     }
-    if (Modular.to.path.contains('divulgar')) {
+    if (Modular.to.path.contains('disseminate')) {
       widget.controller.selectItem = 2;
     }
-    if (Modular.to.path.contains('pedidos')) {
+    if (Modular.to.path.contains('orders')) {
       widget.controller.selectItem = 3;
     }
     if (Modular.to.path.contains('menu')) {
@@ -86,13 +86,13 @@ class _BottomMenuPageState extends State<BottomMenuPage> {
               Modular.to.navigate('/dashboard/inicio');
               break;
             case 1:
-              Modular.to.navigate('/dashboard/novidades/');
+              Modular.to.navigate('/dashboard/news/');
               break;
             case 2:
-              Modular.to.navigate('/dashboard/divulgar/');
+              Modular.to.navigate('/dashboard/disseminate/');
               break;
             case 3:
-              Modular.to.navigate('/dashboard/pedidos/');
+              Modular.to.navigate('/dashboard/orders/');
               break;
             case 4:
               Modular.to.pushNamed('/menu/');
