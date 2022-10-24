@@ -22,19 +22,19 @@ class _DashboardPageState extends State<DashboardPage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             AppButton(
-              label: 'Dashboard Button - Incrementar valor',
+              label: 'Comprar 1',
               onPressed: () {
                 Modular.get<EventBus>().send(EventCount(value: 1));
               },
             ),
             AppButton(
-              label: 'Dashboard Button - Decrementar valor',
+              label: 'Remover 1',
               onPressed: () {
                 Modular.get<EventBus>().send(EventCount(value: -1));
               },
             ),
             AppButton(
-              label: 'Dashboard Button - Show Modal!',
+              label: 'Show Modal!',
               onPressed: () {
                 Modular.get<EventBus>()
                     .send(EventModal('Modal vindo do DASHBOARD!'));

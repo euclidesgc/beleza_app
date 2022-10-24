@@ -13,19 +13,19 @@ class NewsPage extends StatelessWidget {
         child: Column(
           children: [
             AppButton(
-              label: 'Novidades Button - Incrementar valor',
+              label: 'Comprar 01',
               onPressed: () {
                 Modular.get<EventBus>().send(EventCount(value: 1));
               },
             ),
             AppButton(
-              label: 'Novidades Button - Decrementar valor',
+              label: 'Remover 01',
               onPressed: () {
                 Modular.get<EventBus>().send(EventCount(value: -1));
               },
             ),
             AppButton(
-              label: 'Novidades Button - Show Modal!',
+              label: 'Show Modal!',
               onPressed: () {
                 Modular.get<EventBus>()
                     .send(EventModal('Modal vindo do NOVIDADES!'));

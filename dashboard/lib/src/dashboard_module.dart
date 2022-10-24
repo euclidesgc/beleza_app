@@ -7,7 +7,6 @@ import 'package:dashboard/src/dashboard/dashboard_page.dart';
 import 'package:design_system/design_system.dart';
 import 'package:disseminate/disseminate.dart';
 import 'package:external_dependencies/external_dependencies.dart';
-import 'package:http/http.dart';
 import 'package:news/news.dart';
 import 'package:orders/orders.dart';
 import 'package:shared/shared.dart';
@@ -19,9 +18,8 @@ class DashboardModule extends Module {
           dev.log('🚌 EventBus initialized!');
           return EventBus(sync: true);
         }),
-        Bind.singleton((i) => Dio()),
-        Bind.lazySingleton((i) => DashboardController(HttpDioClient(i<Dio>()))),
         Bind.lazySingleton((i) => BottomMenuController()),
+        Bind.lazySingleton((i) => DashboardController()),
       ];
 
   @override

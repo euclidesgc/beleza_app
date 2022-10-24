@@ -1,0 +1,7 @@
+{
+    "data": {
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUxYjkxMDlkLTMzMWEtNGY0NS1hY2E2LWQ5ODVlYzc3Y2MzOSIsInJvbGUiOiI3OWZlMTBmNi05ZjcyLTQ5ZmUtYmI4Ny1mNGJjZjA4ODM5ODciLCJhcHBfYWNjZXNzIjoxLCJhZG1pbl9hY2Nlc3MiOjEsImlhdCI6MTY2NjU2MjU2MywiZXhwIjoxNjY2NTYzNDYzLCJpc3MiOiJkaXJlY3R1cyJ9.euMA4qz9Lz7FZDi8243nB3PhKW2BcFInF7BJFskQ3FM",
+        "expires": 900000,
+        "refresh_token": "vDlMvRa2EB3hnUBFpcfkHC8n7EIjqRTGp2JDJO8jg0OxIUjw63O-cwYdOTyUNMUj"
+    }
+}

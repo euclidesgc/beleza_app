@@ -13,19 +13,19 @@ class DisseminatePage extends StatelessWidget {
         child: Column(
           children: [
             AppButton(
-              label: 'Divulgar Button - Incrementar valor',
+              label: 'Comprar 01',
               onPressed: () {
                 Modular.get<EventBus>().send(EventCount(value: 1));
               },
             ),
             AppButton(
-              label: 'Divulgar Button - Decrementar valor',
+              label: 'Remover 01',
               onPressed: () {
                 Modular.get<EventBus>().send(EventCount(value: -1));
               },
             ),
             AppButton(
-              label: 'Divulgar Button - Show Modal!',
+              label: 'Show Modal!',
               onPressed: () {
                 Modular.get<EventBus>()
                     .send(EventModal('Modal vindo do DIVULGAR!'));

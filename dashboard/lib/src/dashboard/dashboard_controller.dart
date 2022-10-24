@@ -1,16 +1,6 @@
 import 'package:external_dependencies/external_dependencies.dart';
-import 'package:flutter/foundation.dart';
-import 'package:http/http.dart';
 
 class DashboardController {
-  final HttpDioClient _client;
-
-  DashboardController(this._client) {
-    // Modular.get<EventBus>().on().listen((event) {
-    //   debugPrint('❤ ❤ ❤ ${event.toString()}');
-    // });
-  }
-
   goModule(int ind) {
     switch (ind) {
       case 0:
@@ -31,14 +21,5 @@ class DashboardController {
 
       default:
     }
-  }
-
-  getCatFact() async {
-    final response = await _client.request(
-      url: 'https://cat-fact.herokuapp.com/facts',
-      method: MethodHttp.GET,
-    );
-
-    debugPrint(response.body.toString());
   }
 }

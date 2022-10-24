@@ -1,4 +1,4 @@
-import 'package:http/src/models/method_http.dart';
+import 'package:http/src_old/models/method_http.dart';
 
 import 'models/client_response.dart';
 

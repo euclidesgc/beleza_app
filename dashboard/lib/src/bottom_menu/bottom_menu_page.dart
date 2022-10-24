@@ -63,7 +63,7 @@ class _BottomMenuPageState extends State<BottomMenuPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Quantidade: ${widget.controller.qtde.toString()}'),
+        title: Text('Itens: ${widget.controller.qtde.toString()}'),
         centerTitle: true,
         backgroundColor: Colors.purple,
         automaticallyImplyLeading: false,
