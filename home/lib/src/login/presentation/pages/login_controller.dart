@@ -15,11 +15,11 @@ class LoginController {
   login(AuthParamsEntity authParams) async {
     try {
       final response = await authorizeUsecase.call(authParams: authParams);
-
-      // var userSession = Modular.get<UserSession>();
-
+      //Colocar esse response na Session
       Modular.to.pushNamed('/dashboard/inicio');
     } catch (error, stack) {
+      // show a dialog to inform error
+
       if (kDebugMode) {
         log('📛 Error', error: error, stackTrace: stack);
       }

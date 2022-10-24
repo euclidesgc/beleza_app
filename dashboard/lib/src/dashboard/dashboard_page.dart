@@ -36,8 +36,9 @@ class _DashboardPageState extends State<DashboardPage> {
             AppButton(
               label: 'Show Modal!',
               onPressed: () {
-                Modular.get<EventBus>()
-                    .send(EventModal('Modal vindo do DASHBOARD!'));
+                Modular.get<EventBus>().send(
+                  EventModal('Modal vindo do DASHBOARD!'),
+                );
               },
             ),
           ],
