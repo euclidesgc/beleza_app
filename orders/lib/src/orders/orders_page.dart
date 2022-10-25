@@ -1,4 +1,7 @@
+import 'package:design_system/design_system.dart';
+import 'package:external_dependencies/external_dependencies.dart';
 import 'package:flutter/material.dart';
+import 'package:shared/shared.dart';
 
 class OrdersPage extends StatelessWidget {
   const OrdersPage({Key? key}) : super(key: key);
@@ -10,7 +13,31 @@ class OrdersPage extends StatelessWidget {
         title: const Text('Pedidos'),
         automaticallyImplyLeading: false,
       ),
-      body: Container(),
+      body: Center(
+        child: Column(
+          children: [
+            AppButton(
+              label: 'Comprar 01',
+              onPressed: () {
+                Modular.get<EventBus>().send(EventCount(value: 1));
+              },
+            ),
+            AppButton(
+              label: 'Remover 01',
+              onPressed: () {
+                Modular.get<EventBus>().send(EventCount(value: -1));
+              },
+            ),
+            AppButton(
+              label: 'Show Modal!',
+              onPressed: () {
+                Modular.get<EventBus>()
+                    .send(EventModal('Modal vindo do DIVULGAR!'));
+              },
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
