@@ -4,6 +4,7 @@ import 'package:splash/src/pages/splash_page.dart';
 class SplashModule extends Module {
   @override
   List<Bind> get binds => [];
+  
 
   @override
   List<ModularRoute> get routes => [

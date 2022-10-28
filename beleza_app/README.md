@@ -1,6 +1,37 @@
 # beleza_app
 
-A new Flutter project.
+O Objetivo deste projeto é exemplificar algumas situações rotineiras em uma aplicação de grande porte.
+Pontos de observação:
+> Arquitetura
+   Clean ArchTecthure 
+	- domain
+	- infra
+	- data
+
+> Gestão de estado mais padronizada de acordo com o mercado (Bloc)
+ 
+> Gestão de rotas mais sucinta e descentralizada
+> EventBus (Pubsub)
+> Analytics
+> CrashLytics
+> Tagueamento
+
+> Alertas, Modais e Toast messages
+
+> HttpClient abstraído e centralizado
+> Tratamento de erros <- Either
+
+> Design System (Atomic Design) 
+
+> Testes 
+
+> Multi Brands (flavors) Theme Extension, prevendo unificação das marcas no app. <<
+
+> Monorepo 
+> Cache (cache de imagens, cache de dados)
+
+
+
 
 ## Getting Started
 

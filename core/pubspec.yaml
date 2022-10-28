@@ -12,9 +12,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-  external_dependencies:
-    path: ../external_dependencies
-
   splash:
     path: ../splash
 
@@ -44,6 +41,9 @@ dependencies:
 
   profile:
     path: ../profile/
+  
+  external_dependencies:
+    path: ../external_dependencies
   
   shared:
     path: ../shared/

@@ -41,6 +41,12 @@ class _DashboardPageState extends State<DashboardPage> {
                 );
               },
             ),
+            AppButton(
+              label: 'Show Alert Dialog!',
+              onPressed: () {
+                AppAlertDialog.showAlertDialog(context, 'Alerta de Teste!');
+              },
+            ),
           ],
         ),
       ),

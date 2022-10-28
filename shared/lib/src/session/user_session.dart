@@ -1,5 +1,5 @@
 
 
 class UserSession {
-  String? authResponse;
+  String? refreshToken;
 }
