@@ -10,7 +10,7 @@ class AppWidget extends StatelessWidget {
     Modular.setNavigatorKey(NavigationService.navigatorKey);
 
     return MaterialApp.router(
-      title: 'Grupo Boticário',
+      title: 'Power App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
       routeInformationParser: Modular.routeInformationParser,

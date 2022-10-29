@@ -20,6 +20,9 @@ dependencies:
 
   shared:
     path: ../shared/
+  
+  event_bus:
+    path: ../event_bus/
 
 dev_dependencies:
   flutter_test:

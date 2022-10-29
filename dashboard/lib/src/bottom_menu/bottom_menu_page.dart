@@ -1,7 +1,7 @@
 import 'package:dashboard/src/bottom_menu/bottom_menu_controller.dart';
+import 'package:event_bus/event_bus.dart';
 import 'package:external_dependencies/external_dependencies.dart';
 import 'package:flutter/material.dart';
-import 'package:shared/shared.dart';
 
 class BottomMenuPage extends StatefulWidget {
   final BottomMenuController controller;

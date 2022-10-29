@@ -21,6 +21,12 @@ dependencies:
   shared:
     path: ../shared/
   
+  event_bus:
+    path: ../event_bus/
+  
+  http:
+    path: ../http/
+  
 
 dev_dependencies:
   flutter_test:

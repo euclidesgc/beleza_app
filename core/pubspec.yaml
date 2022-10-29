@@ -47,6 +47,9 @@ dependencies:
   
   shared:
     path: ../shared/
+
+  event_bus:
+    path: ../event_bus/
   
   
 

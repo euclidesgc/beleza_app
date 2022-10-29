@@ -1,7 +1,7 @@
 import 'package:design_system/design_system.dart';
+import 'package:event_bus/event_bus.dart';
 import 'package:external_dependencies/external_dependencies.dart';
 import 'package:flutter/material.dart';
-import 'package:shared/shared.dart';
 
 class OrdersPage extends StatelessWidget {
   const OrdersPage({Key? key}) : super(key: key);

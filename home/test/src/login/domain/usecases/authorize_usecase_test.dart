@@ -9,8 +9,8 @@ import 'package:home/src/login/domain/repositories/authorize_repository.dart';
 import 'package:home/src/login/domain/usecases/authorize_usecase.dart';
 import 'package:home/src/login/infrastructure/datasources/authorize_datasource.dart';
 import 'package:home/src/login/infrastructure/repositories/authorize_repository_impl.dart';
+import 'package:http/http.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:shared/shared.dart';
 
 import '../../../../fixtures/fixture.dart';
 

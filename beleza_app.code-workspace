@@ -47,6 +47,9 @@
 		},
 		{
 			"path": "profile"
+		},
+		{
+			"path": "event_bus"
 		}
 	],
 	"settings": {}

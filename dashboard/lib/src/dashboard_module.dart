@@ -1,5 +1,3 @@
-import 'dart:developer' as dev;
-
 import 'package:dashboard/src/bottom_menu/bottom_menu_controller.dart';
 import 'package:dashboard/src/bottom_menu/bottom_menu_page.dart';
 import 'package:dashboard/src/dashboard/dashboard_controller.dart';
@@ -9,15 +7,10 @@ import 'package:disseminate/disseminate.dart';
 import 'package:external_dependencies/external_dependencies.dart';
 import 'package:news/news.dart';
 import 'package:orders/orders.dart';
-import 'package:shared/shared.dart';
 
 class DashboardModule extends Module {
   @override
   List<Bind> get binds => [
-        Bind.singleton<EventBus>((i) {
-          dev.log('🚌 EventBus initialized!');
-          return EventBus(sync: true);
-        }),
         Bind.lazySingleton((i) => BottomMenuController()),
         Bind.lazySingleton((i) => DashboardController()),
       ];
@@ -51,10 +44,4 @@ class DashboardModule extends Module {
           ],
         ),
       ];
-
-  @override
-  void dispose() {
-    super.dispose();
-    dev.log('📛 🚌 📛 ATENÇÃO: EventBus disposed! 📛 🚌 📛');
-  }
 }

@@ -4,7 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:home/src/endpoints/endpoints.dart';
 import 'package:home/src/login/data/models/models.dart';
 import 'package:home/src/login/infrastructure/datasources/authorize_datasource.dart';
-import 'package:shared/shared.dart';
+import 'package:http/http.dart';
 
 class AuthorizeDatasourceImpl implements AuthorizeDatasource {
   final HttpClient httpClient;

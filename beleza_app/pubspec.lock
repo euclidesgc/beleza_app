@@ -148,6 +148,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.5"
+  event_bus:
+    dependency: transitive
+    description:
+      path: "../event_bus"
+      relative: true
+    source: path
+    version: "0.0.1"
   external_dependencies:
     dependency: "direct main"
     description:

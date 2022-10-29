@@ -1,3 +1,2 @@
-export 'src/dio_client_impl.dart';
-export 'src/http_client.dart';
-export 'src/http_error.dart';
+export 'src/dio_client/dio_client_impl.dart';
+export 'src/http_client/http.dart';

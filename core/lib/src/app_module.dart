@@ -1,7 +1,10 @@
+import 'dart:developer';
+
 import 'package:cart/cart.dart';
 import 'package:clube_boti/clube_boti.dart';
 import 'package:dashboard/dashboard.dart';
 import 'package:disseminate/disseminate.dart';
+import 'package:event_bus/event_bus.dart';
 import 'package:external_dependencies/external_dependencies.dart';
 import 'package:home/home.dart';
 import 'package:menu/menu.dart';
@@ -12,7 +15,12 @@ import 'package:splash/splash.dart';
 
 class AppModule extends Module {
   @override
-  List<Bind> get binds => [];
+  List<Bind> get binds => [
+        Bind.singleton<EventBus>((i) {
+          log('🚌 EventBus initialized!');
+          return EventBus(sync: true);
+        }),
+      ];
 
   @override
   List<ModularRoute> get routes => [
@@ -27,4 +35,10 @@ class AppModule extends Module {
         ModuleRoute('/menu', module: MenuModule()),
         ModuleRoute('/profile', module: ProfileModule()),
       ];
+
+  @override
+  void dispose() {
+    super.dispose();
+    log('📛 🚌 📛 ATENÇÃO: EventBus disposed! 📛 🚌 📛');
+  }
 }
