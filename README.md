@@ -9,6 +9,7 @@
   - [Internacionalização](#internacionalização)
   - [Observabilidade](#observabilidade)
   - [Testes](#testes)
+- [Observações](#observações)
 
 # Beleza App
 
@@ -25,10 +26,17 @@ A divisão se dará da seguinte forma:
 |Nome do pacote | Descrição            |
 |----------|---------------------------|
 | beleza_app | Ponto de entrada da aplicação |
-| core | Guarda a rota incial de tos os os outros pacotes e também inicializa o Eventbus|
-| col 3 is | right-aligned             |
-
-
+| core | Guarda a rota incial de todos os outros pacotes e também inicializa o Eventbus|
+| splash | Exibe uma SplashPage ao iniciar o App |
+| home | Login, Cadastro, Recuperação de senha |
+| dashboard | Página inicial do app |
+| package_manager | Gerenciamento de pacotes externos |
+| event_bus | Comunicação entre os módulos |
+| design_system | Widgets, Fontes, Cores e Ícones |
+| shared | Informações compartilhadas entre os pacotes (sessão por exemplo) |
+| profile | Informações relativas ao usuário logado |
+| http | Abstração de pacotes para acesso a API'S (Dio, Uno, Http, etc.) |
+| todos os outros | Pacotes que compoem seu app |
 
 ### Clean Architecture
 
@@ -61,40 +69,79 @@ Trabalhar com bloc de duas formas:
 ## Injeção de dependência
 - Pacote utilizado:
 - - flutter_modular
+
+A injeção de dependencias que este pacote oferece nos permite segmentar toda essa quetão por pacotes, agrupando e organizando essas dependências dentro do contexto ao qual elas pertecem, facilitando a compreensão e manutenção.
+
 ## Gerenciamento de Rotas
 - Pacote utilizado:
 - - flutter_modular
+
+O Gerenciamento de rotas oferecido por este pacote nos permite segmentar as rotas por pacote, agrupando e organizando-as dentro contexto ao qual elas pertencem, deixando o código mais claro e de manutenção mais fácil.
+
 ## Design System
+- Atomic Design
+
 
 ## Tratamento de erros
 - Pacote utilizado:
 - - dartz
+
+Quando você pensa em erros, existem dois tipos possíveis deles:
+
+1. Erros dos quais seu software pode se recuperar: <br/>
+   **Ex: Uma senha inválida**
+2. Erros dos quais seu software não pode se recuperar ou não faz sentido recuperar: <br />
+   **Ex: Conversão de um valor nulo para inteiro**
+
+Se não houver uma maneira de se recuperar de um erro a melhor forma de lidar com isso é maximizar a proprabilidade de um engenheiro lidar com isso para que a solução seja tomada da forma mais rápida.
+
+No Dart, a maneira de sinalizar um erro para o chamador é lançando um `Exception` ou `Error`.
+
+Agora observe a seguinte função:
+
+````dart
+Uri getUri(String url){
+  if(url.isEmpty){
+    throw ArgumentError('url não pode ser vazio!')
+  }
+  return Uri.parse(url);
+}
+````
+> Como o chamador saberá que precisa lidar com erros lançados por sua função?
+
+A função acima deverá converter uma URL em uma URI, porém caso a string passada não estiver no formato esperado, uma exeção será disparada.
+Esta função tem um erro implícito.
+
+Quando o erro é imlplícito, o desenvolvedor precisa consultar a documentação ou os comentários da função para verificar se a mesma pode retornar alguma exceção e se previnir quanto a isso. Nesse caso, é um risco de que o tratamento correto não seja realmente feito ocasionando um mal funcionamento do sistema. 
+
+1. Se você puder se recuperar do erro, isso significa sinalizar para o chamador imediato (um ou dois níveis mais alto na cadeia) para que ele possa lidar com isso normalmente.
+2. Se você não conseguir se recuperar do erro, em algum lugar central do seu programa, você registra o erro e aborta. Por exemplo, no Crashlytics do Firebase.
+
+Existe uma forma de transformar erros implícitos em explícitos através do tipo de retorno `Either`. 
+
+Ao seguir esse padrão, você garante que o usuário do seu método nunca perca o cenário de erro. Ele/Ela tem que tomar uma decisão sobre o que fazer com o erro. Tratar ou repassar para a camada superior que pode lidar com isso.
+
 ## Internacionalização
 - Pacote utilizado:
-- - flutter_modular
-- 
+- - intl
+
+Existe um pluggin para vscode e android studio que ajuda na implementação dessas strings para internacionalização do app e a própria documentação desta extensão mostra como utilizá-la.
+
 ## Observabilidade
 - Crashlitics
 - Analytics
 - Tagueamento
 ## Testes
 
-> Gestão de rotas mais sucinta e descentralizada
-> EventBus (Pubsub)
-> Analytics
-> CrashLytics
-> Tagueamento
+- Testes unitários
+- Testes de widget
+- Golden Test
 
-> Alertas, Modais e Toast messages
+# Observações
 
-> HttpClient abstraído e centralizado
-> Tratamento de erros <- Either
+Ainda será preciso verificar a situação deste app trabalhar com vários flavors simultaneamente, e neste caso em duas situações:
 
-> Design System (Atomic Design) 
+1. Um main.dart para cada flavor
+2. Um único main.dart porém com marcas segmentadas internamente no app/
 
-> Testes 
-
-> Multi Brands (flavors) Theme Extension, prevendo unificação das marcas no app. <<
-
-> Monorepo 
-> Cache (cache de imagens, cache de dados)
+- E ainda, como lídar com cache das informações?
