@@ -3,7 +3,7 @@ import 'package:external_dependencies/external_dependencies.dart';
 import 'package:flutter/material.dart';
 import 'package:home/src/login/domain/entities/entities.dart';
 import 'package:home/src/login/domain/usecases/authorize_usecase.dart';
-import 'package:home/src/login/presentation/login/bloc/bloc/login_bloc.dart';
+import 'package:home/src/login/presentation/login/bloc/login_bloc.dart';
 
 class LoginPage extends StatefulWidget {
   final AuthorizeUsecase authorizeUsecase;
