@@ -6,7 +6,6 @@ Neste sentido e no contexto de uma aplicação flutter para dispositivos móveis
 
 - [Arquitetura](#arquitetura)
 - [Gestão de Estado](#gestão-de-estados)
-- [Gestão de Estado](#gestao-de-estados)
 - Injeção de dependência
 - Gerenciamento de Rotas
 - Design System
@@ -38,7 +37,7 @@ Neste sentido e no contexto de uma aplicação flutter para dispositivos móveis
 - - feature
 - - - bloc
 
-## <a name="gestao-de-estados"></a>Gestão de estados
+## Gestão de estados
 
 - Pacotes utilizados:
 - - bloc
