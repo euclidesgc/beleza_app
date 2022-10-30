@@ -4,9 +4,9 @@ import 'package:dashboard/src/dashboard/dashboard_controller.dart';
 import 'package:dashboard/src/dashboard/dashboard_page.dart';
 import 'package:design_system/design_system.dart';
 import 'package:disseminate/disseminate.dart';
-import 'package:external_dependencies/external_dependencies.dart';
 import 'package:news/news.dart';
 import 'package:orders/orders.dart';
+import 'package:package_manager/package_manager.dart';
 
 class DashboardModule extends Module {
   @override

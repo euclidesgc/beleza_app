@@ -155,13 +155,6 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
-  external_dependencies:
-    dependency: "direct main"
-    description:
-      path: "../external_dependencies"
-      relative: true
-    source: path
-    version: "0.0.1"
   fake_async:
     dependency: transitive
     description:
@@ -375,6 +368,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  package_manager:
+    dependency: "direct main"
+    description:
+      path: "../package_manager"
+      relative: true
+    source: path
+    version: "0.0.1"
   path:
     dependency: transitive
     description:

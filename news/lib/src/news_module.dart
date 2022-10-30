@@ -1,5 +1,5 @@
-import 'package:external_dependencies/external_dependencies.dart';
 import 'package:news/src/novidades/news_page.dart';
+import 'package:package_manager/package_manager.dart';
 
 class NewsModule extends Module {
   @override

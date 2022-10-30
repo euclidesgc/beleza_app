@@ -12,8 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   
-  external_dependencies:
-    path: ../external_dependencies/
+  package_manager:
+    path: ../package_manager/
 
   design_system:
     path: ../design_system/

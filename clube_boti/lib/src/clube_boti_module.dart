@@ -1,7 +1,6 @@
-import 'package:external_dependencies/external_dependencies.dart';
+import 'package:package_manager/package_manager.dart';
+
 import 'clube_boti/clube_boti_page.dart';
-
-
 
 class ClubeBotiModule extends Module {
   @override

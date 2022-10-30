@@ -1,5 +1,5 @@
-import 'package:external_dependencies/external_dependencies.dart';
 import 'package:orders/src/orders/orders_page.dart';
+import 'package:package_manager/package_manager.dart';
 
 class OrdersModule extends Module {
   @override

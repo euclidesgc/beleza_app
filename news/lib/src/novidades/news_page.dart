@@ -1,7 +1,7 @@
 import 'package:design_system/design_system.dart';
 import 'package:event_bus/event_bus.dart';
-import 'package:external_dependencies/external_dependencies.dart';
 import 'package:flutter/material.dart';
+import 'package:package_manager/package_manager.dart';
 
 class NewsPage extends StatelessWidget {
   const NewsPage({Key? key}) : super(key: key);

@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'dart:developer';
 
-import 'package:external_dependencies/external_dependencies.dart';
 import 'package:flutter/foundation.dart';
 import 'package:home/src/login/domain/entities/auth_params_entity.dart';
 import 'package:home/src/login/domain/usecases/authorize_usecase.dart';
+import 'package:package_manager/package_manager.dart';
 
 part 'login_event.dart';
 part 'login_state.dart';

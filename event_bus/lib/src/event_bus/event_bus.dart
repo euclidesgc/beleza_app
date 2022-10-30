@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:external_dependencies/external_dependencies.dart';
+import 'package:package_manager/package_manager.dart';
 
 class EventBus implements Disposable {
   final StreamController _streamController;

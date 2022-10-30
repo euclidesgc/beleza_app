@@ -5,11 +5,11 @@ import 'package:clube_boti/clube_boti.dart';
 import 'package:dashboard/dashboard.dart';
 import 'package:disseminate/disseminate.dart';
 import 'package:event_bus/event_bus.dart';
-import 'package:external_dependencies/external_dependencies.dart';
 import 'package:home/home.dart';
 import 'package:menu/menu.dart';
 import 'package:news/news.dart';
 import 'package:orders/orders.dart';
+import 'package:package_manager/package_manager.dart';
 import 'package:profile/profile.dart';
 import 'package:splash/splash.dart';
 

@@ -7,9 +7,6 @@
 			"path": "core"
 		},
 		{
-			"path": "external_dependencies"
-		},
-		{
 			"path": "home"
 		},
 		{
@@ -50,6 +47,9 @@
 		},
 		{
 			"path": "event_bus"
+		},
+		{
+			"path": "package_manager"
 		}
 	],
 	"settings": {}

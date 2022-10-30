@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:external_dependencies/external_dependencies.dart';
 import 'package:http/src/http_client/http.dart';
+import 'package:package_manager/package_manager.dart';
 
 class DioClientImpl implements HttpClient {
   final List<Interceptor>? interceptors;

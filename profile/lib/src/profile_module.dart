@@ -1,4 +1,4 @@
-import 'package:external_dependencies/external_dependencies.dart';
+import 'package:package_manager/package_manager.dart';
 
 import 'profile/profile_page.dart';
 

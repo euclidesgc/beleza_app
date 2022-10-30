@@ -42,8 +42,8 @@ dependencies:
   profile:
     path: ../profile/
   
-  external_dependencies:
-    path: ../external_dependencies
+  package_manager:
+    path: ../package_manager
   
   shared:
     path: ../shared/
