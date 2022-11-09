@@ -60,8 +60,9 @@ A divisão se dará da seguinte forma:
 
 **Observação:**<br/>
 Trabalhar com bloc de duas formas:
-- Uma Classe para cada estado: [Exemplo](../home/lib/src/login/presentation/login/bloc/login_state.dart) <br/>
-- Uma Classe com uma propriedade Enum que denomina o estado: [Exemplo](../home/lib/src/login/presentation/login/bloc/login_state.dart) <br/>
+https://raw.githubusercontent.com/euclidesgc/clean-architecture-scaffolding/main/.my_templates/default_templates/
+- Uma Classe para cada estado: [Exemplo](https://raw.githubusercontent.com/euclidesgc/beleza_app/home/lib/src/login/presentation/login/bloc/login_state.dart) <br/>
+- Uma Classe com uma propriedade Enum que denomina o estado: [Exemplo](https://raw.githubusercontent.com/euclidesgc/beleza_app/home/lib/src/login/presentation/login/bloc/login_state.dart) <br/>
  
 ## Injeção de dependência
 - Pacote utilizado:
