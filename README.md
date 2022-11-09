@@ -4,6 +4,8 @@
   - [Gestão de estados](#gestão-de-estados)
   - [Injeção de dependência](#injeção-de-dependência)
   - [Gerenciamento de Rotas](#gerenciamento-de-rotas)
+  - [Armazenamento local](#armazenamento-local)
+  - [DeepLink / dynamicLinks](#deeplink--dynamiclinks)
   - [Design System](#design-system)
   - [Tratamento de erros](#tratamento-de-erros)
   - [Internacionalização](#internacionalização)
@@ -12,12 +14,9 @@
 - [Observações](#observações)
 
 # Beleza App
-
 O Objetivo deste projeto é exemplificar algumas situações rotineiras em uma aplicação de grande porte na tentattiva de encontrar as melhores soluções e padrões utilizados no mercado com o intuito de melhorar a experiência do desenvolvedor, seja ele(a) Júnior, Pleno ou Sênior,
 
 Neste sentido e no contexto de uma aplicação flutter para dispositivos móveis, podemos identificar alguns dos principais pontos de atenção que serão exemplificados neste projeto:
-
-
 
 ## Arquitetura
 Para uma melhor organização do projeto ele será segmentado em pacotes (módulos), visando o mínimo de dependencia possível entre cada módulo.
@@ -39,27 +38,25 @@ A divisão se dará da seguinte forma:
 | todos os outros | Pacotes que compoem seu app |
 
 ### Clean Architecture
-
 - data
-- - datasources
-- - models
+  - datasources
+  - models
 - infrastructure
-- - datasources
-- - repositories
+  - datasources
+  - repositories
 - domain
-- - entities
-- - errors
-- - usecases
-- - repositories
+  - entities
+  - errors
+  - usecases
+  - repositories
 - presentation
-- - feature
-- - - bloc
+  - feature
+    - bloc
 
 ## Gestão de estados
-
 - Pacotes utilizados:
-- - bloc
-- - flutter_bloc
+  - bloc
+  - flutter_bloc
 
 **Observação:**<br/>
 Trabalhar com bloc de duas formas:
@@ -68,23 +65,32 @@ Trabalhar com bloc de duas formas:
  
 ## Injeção de dependência
 - Pacote utilizado:
-- - flutter_modular
+  - flutter_modular
 
 A injeção de dependencias que este pacote oferece nos permite segmentar toda essa quetão por pacotes, agrupando e organizando essas dependências dentro do contexto ao qual elas pertecem, facilitando a compreensão e manutenção.
 
 ## Gerenciamento de Rotas
 - Pacote utilizado:
-- - flutter_modular
+  - flutter_modular
 
-O Gerenciamento de rotas oferecido por este pacote nos permite segmentar as rotas por pacote, agrupando e organizando-as dentro contexto ao qual elas pertencem, deixando o código mais claro e de manutenção mais fácil.
+## Armazenamento local
+- Pacote utilizado:
+  - flutter_secure_storage
+
+Armazenamento de dados local com segurança
+
+## DeepLink / dynamicLinks
+- Pacote utilizado:
+  - firebase
+
+Armazenamento de dados local com segurança
 
 ## Design System
 - Atomic Design
 
-
 ## Tratamento de erros
 - Pacote utilizado:
-- - dartz
+  - dartz
 
 Quando você pensa em erros, existem dois tipos possíveis deles:
 
@@ -123,7 +129,7 @@ Ao seguir esse padrão, você garante que o usuário do seu método nunca perca 
 
 ## Internacionalização
 - Pacote utilizado:
-- - intl
+  - intl
 
 Existe um pluggin para vscode e android studio que ajuda na implementação dessas strings para internacionalização do app e a própria documentação desta extensão mostra como utilizá-la.
 
@@ -131,14 +137,13 @@ Existe um pluggin para vscode e android studio que ajuda na implementação dess
 - Crashlitics
 - Analytics
 - Tagueamento
-## Testes
 
+## Testes
 - Testes unitários
 - Testes de widget
 - Golden Test
 
 # Observações
-
 Ainda será preciso verificar a situação deste app trabalhar com vários flavors simultaneamente, e neste caso em duas situações:
 
 1. Um main.dart para cada flavor
