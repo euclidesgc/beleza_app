@@ -151,3 +151,4 @@ Ainda será preciso verificar a situação deste app trabalhar com vários flavo
 2. Um único main.dart porém com marcas segmentadas internamente no app/
 
 - E ainda, como lídar com cache das informações?
+- [Toast Messages](https://itnext.io/create-your-own-toast-without-using-any-packages-6d3828816f7c)
