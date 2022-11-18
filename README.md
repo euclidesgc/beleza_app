@@ -150,5 +150,5 @@ Ainda será preciso verificar a situação deste app trabalhar com vários flavo
 1. Um main.dart para cada flavor
 2. Um único main.dart porém com marcas segmentadas internamente no app/
 
-- E ainda, como lídar com cache das informações?
+- E ainda, como lídar com cache das informações? [Cache strategy](https://medium.com/@romaingreaume/implementing-a-cache-strategy-in-your-flutter-app-5db3e316e7c9)
 - [Toast Messages](https://itnext.io/create-your-own-toast-without-using-any-packages-6d3828816f7c)
