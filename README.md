@@ -98,7 +98,7 @@ Quando você pensa em erros, existem dois tipos possíveis deles:
 2. Erros dos quais seu software não pode se recuperar ou não faz sentido recuperar: <br />
    **Ex: Conversão de um valor nulo para inteiro**
 
-Se não houver uma maneira de se recuperar de um erro a melhor forma de lidar com isso é maximizar a proprabilidade de um engenheiro lidar com isso para que a solução seja tomada da forma mais rápida.
+Se não houver uma maneira de se recuperar de um erro a melhor forma de lidar com isso é maximizar a probabilidade de um engenheiro lidar com isso para que a solução seja tomada da forma mais rápida.
 
 No Dart, a maneira de sinalizar um erro para o chamador é lançando um `Exception` ou `Error`.
 
