@@ -68,7 +68,7 @@ Trabalhar com bloc de duas formas:
 - Pacote utilizado:
   - flutter_modular
 
-A injeção de dependencias que este pacote oferece nos permite segmentar toda essa quetão por pacotes, agrupando e organizando essas dependências dentro do contexto ao qual elas pertecem, facilitando a compreensão e manutenção.
+A injeção de dependencias que este pacote oferece nos permite segmentar toda aplicação por pacotes, agrupando e organizando essas dependências dentro do contexto ao qual elas pertecem, facilitando a compreensão e manutenção.
 
 ## Gerenciamento de Rotas
 - Pacote utilizado:
