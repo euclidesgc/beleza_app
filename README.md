@@ -84,8 +84,6 @@ Armazenamento de dados local com segurança
 - Pacote utilizado:
   - firebase
 
-Armazenamento de dados local com segurança
-
 ## Design System
 - Atomic Design
 
