@@ -14,7 +14,7 @@
 - [Observações](#observações)
 
 # Beleza App
-O Objetivo deste projeto é exemplificar algumas situações rotineiras em uma aplicação de grande porte na tentattiva de encontrar as melhores soluções e padrões utilizados no mercado com o intuito de melhorar a experiência do desenvolvedor, seja ele(a) Júnior, Pleno ou Sênior,
+O Objetivo deste projeto é exemplificar algumas situações rotineiras em uma aplicação de grande porte na tentativa de encontrar as melhores soluções e padrões utilizados no mercado com o intuito de melhorar a experiência do desenvolvedor, seja ele(a) Júnior, Pleno ou Sênior.
 
 Neste sentido e no contexto de uma aplicação flutter para dispositivos móveis, podemos identificar alguns dos principais pontos de atenção que serão exemplificados neste projeto:
 
