@@ -142,6 +142,10 @@ Existe um pluggin para vscode e android studio que ajuda na implementação dess
 - Testes de widget
 - Golden Test
 
+## Segurança
+- https://pub.dev/packages/envied
+- https://pub.dev/packages/freerasp
+
 # Observações
 Ainda será preciso verificar a situação deste app trabalhar com vários flavors simultaneamente, e neste caso em duas situações:
 
