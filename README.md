@@ -11,6 +11,7 @@
   - [Internacionalização](#internacionalização)
   - [Observabilidade](#observabilidade)
   - [Testes](#testes)
+  - [Segurança](#segurança)
 - [Observações](#observações)
 
 # Beleza App
