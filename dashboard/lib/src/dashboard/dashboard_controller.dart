@@ -1,4 +1,5 @@
 import 'package:package_manager/package_manager.dart';
+import 'package:shared/shared.dart';
 
 class DashboardController {
   goModule(int ind) {
@@ -21,5 +22,12 @@ class DashboardController {
 
       default:
     }
+  }
+
+  /// Exemplo de como usar a NavigationService para recuperar o context atual e
+  /// exibir um AlertDialog.
+  exibeDialogo(String message) {
+    AppAlertDialog.showAlertDialog(
+        NavigationService.navigatorKey.currentContext!, message);
   }
 }

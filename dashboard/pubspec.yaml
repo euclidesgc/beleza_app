@@ -17,8 +17,8 @@ dependencies:
 
   
 
-  # shared:
-  #   path: ../shared/
+  shared:
+    path: ../shared/
     
   # http:
   #   path: ../http/
