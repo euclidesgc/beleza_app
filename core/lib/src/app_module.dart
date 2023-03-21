@@ -11,7 +11,6 @@ import 'package:news/news.dart';
 import 'package:orders/orders.dart';
 import 'package:package_manager/package_manager.dart';
 import 'package:profile/profile.dart';
-import 'package:splash/splash.dart';
 
 class AppModule extends Module {
   @override
@@ -24,8 +23,8 @@ class AppModule extends Module {
 
   @override
   List<ModularRoute> get routes => [
-        ModuleRoute('/', module: SplashModule()),
-        ModuleRoute('/home', module: HomeModule()),
+        // ModuleRoute('/', module: SplashModule()),
+        ModuleRoute('/', module: HomeModule()),
         ModuleRoute('/dashboard', module: DashboardModule()),
         ModuleRoute('/cart', module: CartModule()),
         ModuleRoute('/clube_boti', module: ClubeBotiModule()),

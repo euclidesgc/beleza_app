@@ -27,7 +27,6 @@ A divisão se dará da seguinte forma:
 |----------|---------------------------|
 | beleza_app | Ponto de entrada da aplicação |
 | core | Guarda a rota incial de todos os outros pacotes e também inicializa o Eventbus|
-| splash | Exibe uma SplashPage ao iniciar o App |
 | home | Login, Cadastro, Recuperação de senha |
 | dashboard | Página inicial do app |
 | package_manager | Gerenciamento de pacotes externos |

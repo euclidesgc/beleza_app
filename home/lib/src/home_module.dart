@@ -31,7 +31,7 @@ class HomeModule extends Module {
 
   @override
   List<ModularRoute> get routes => [
-        ChildRoute('/login',
+        ChildRoute('/',
             child: (_, args) => LoginPage.route(
                   authorizeUsecase: Modular.get<AuthorizeUsecase>(),
                 )),
