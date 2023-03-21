@@ -15,9 +15,6 @@ dependencies:
   package_manager:
     path: ../package_manager/
 
-  # design_system:
-  #   path: ../design_system/
-
   shared:
     path: ../shared/
 
