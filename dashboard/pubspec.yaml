@@ -15,14 +15,13 @@ dependencies:
   package_manager:
     path: ../package_manager/
 
-  design_system:
-    path: ../design_system/
+  
 
-  shared:
-    path: ../shared/
+  # shared:
+  #   path: ../shared/
     
-  http:
-    path: ../http/
+  # http:
+  #   path: ../http/
 
   disseminate:
     path: ../disseminate/
@@ -33,8 +32,8 @@ dependencies:
   orders:
     path: ../orders/
 
-  menu:
-    path: ../menu/
+  # menu:
+  #   path: ../menu/
   
   event_bus:
     path: ../event_bus/
