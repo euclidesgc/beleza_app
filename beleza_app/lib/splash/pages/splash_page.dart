@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget {
-  const SplashPage({Key? key}) : super(key: key);
+  final String message;
+
+  const SplashPage({Key? key, required this.message}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.pink[900],
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: const [
+          children: [
             Center(
-              child: CircularProgressIndicator(color: Colors.red),
+              child: Text(message,
+                  style: const TextStyle(color: Colors.white, fontSize: 16)),
             ),
           ],
         ),

@@ -12,9 +12,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-  splash:
-    path: ../splash
-
   home:
     path: ../home/
 
