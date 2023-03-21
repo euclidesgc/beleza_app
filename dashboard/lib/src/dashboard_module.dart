@@ -2,7 +2,6 @@ import 'package:dashboard/src/bottom_menu/bottom_menu_controller.dart';
 import 'package:dashboard/src/bottom_menu/bottom_menu_page.dart';
 import 'package:dashboard/src/dashboard/dashboard_controller.dart';
 import 'package:dashboard/src/dashboard/dashboard_page.dart';
-import 'package:design_system/design_system.dart';
 import 'package:disseminate/disseminate.dart';
 import 'package:news/news.dart';
 import 'package:orders/orders.dart';

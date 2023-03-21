@@ -1,4 +1,3 @@
-import 'package:design_system/design_system.dart';
 import 'package:flutter/material.dart';
 import 'package:home/src/login/domain/entities/entities.dart';
 import 'package:home/src/login/domain/usecases/authorize_usecase.dart';
